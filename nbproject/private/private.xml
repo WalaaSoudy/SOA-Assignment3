@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/ALkamel/Documents/NetBeansProjects/WebApplication3/src/java/CollectionType.java</file>
+            <file>file:/C:/Users/ALkamel/Documents/NetBeansProjects/WebApplication3/src/java/RetrieveEmployeesServlet.java</file>
+            <file>file:/C:/Users/ALkamel/Documents/NetBeansProjects/WebApplication3/src/java/EmployeeServlet.java</file>
+            <file>file:/C:/Users/ALkamel/Documents/NetBeansProjects/WebApplication3/src/java/TypeFactory.java</file>
+            <file>file:/C:/Users/ALkamel/Documents/NetBeansProjects/WebApplication3/web/styles.css</file>
+            <file>file:/C:/Users/ALkamel/Documents/NetBeansProjects/WebApplication3/src/java/DisplayEmployeeServlet.java</file>
+            <file>file:/C:/Users/ALkamel/Documents/NetBeansProjects/WebApplication3/web/retrieveEmployees.html</file>
+            <file>file:/C:/Users/ALkamel/Documents/NetBeansProjects/WebApplication3/src/java/Employee.java</file>
+            <file>file:/C:/Users/ALkamel/Documents/NetBeansProjects/WebApplication3/src/java/employee.json</file>
+            <file>file:/C:/Users/ALkamel/Documents/NetBeansProjects/WebApplication3/src/java/JsonUtility.java</file>
+            <file>file:/C:/Users/ALkamel/Documents/NetBeansProjects/WebApplication3/web/updateEmployee.html</file>
+            <file>file:/C:/Users/ALkamel/Documents/NetBeansProjects/WebApplication3/src/java/UpdateEmployeeServlet.java</file>
+            <file>file:/C:/Users/ALkamel/Documents/NetBeansProjects/WebApplication3/web/display.html</file>
+            <file>file:/C:/Users/ALkamel/Documents/NetBeansProjects/WebApplication3/src/java/Language.java</file>
+            <file>file:/C:/Users/ALkamel/Documents/NetBeansProjects/WebApplication3/src/java/SearchServlet.java</file>
+            <file>file:/C:/Users/ALkamel/Documents/NetBeansProjects/WebApplication3/web/index.html</file>
+            <file>file:/C:/Users/ALkamel/Documents/NetBeansProjects/WebApplication3/web/delete_item_success.html</file>
+            <file>file:/C:/Users/ALkamel/Documents/NetBeansProjects/WebApplication3/web/addEmployee.html</file>
+            <file>file:/C:/Users/ALkamel/Documents/NetBeansProjects/WebApplication3/src/java/DeleteEmployeeServlet.java</file>
+            <file>file:/C:/Users/ALkamel/Documents/NetBeansProjects/WebApplication3/src/java/ObjectMapper.java</file>
+            <file>file:/C:/Users/ALkamel/Documents/NetBeansProjects/WebApplication3/web/display.css</file>
+            <file>file:/C:/Users/ALkamel/Documents/NetBeansProjects/WebApplication3/web/search.html</file>
+        </group>
+    </open-files>
+</project-private>

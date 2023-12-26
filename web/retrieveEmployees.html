@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrieve Employees</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 30px;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        input[type="submit"] {
+            padding: 12px 24px;
+            font-size: 18px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Added some additional styling for aesthetics */
+        input[type="submit"] {
+            margin-top: 20px;
+        }
+
+        /* Responsive styling for smaller screens */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+
+            input[type="submit"] {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h2>Retrieve Employees</h2>
+    <form action="retrieveEmployeesServlet" method="get">
+        <input type="submit" value="Retrieve Employees">
+    </form>
+</body>
+
+</html>

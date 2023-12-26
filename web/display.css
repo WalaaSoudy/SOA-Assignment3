@@ -1,0 +1,56 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4caf50;
+    color: white;
+}
+
+p {
+    text-align: center;
+}
+
+/* Nested table styles */
+td table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td table th, td table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+td table th {
+    background-color: #45a049;
+    color: white;
+}

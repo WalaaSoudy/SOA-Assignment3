@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Employee</title>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #007bff; /* Updated color for h2 */
+            text-align: center; /* Center the text */
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Search Employee</h2>
+    <form id="searchForm">
+        <label for="searchEmployeeID">Employee ID:</label>
+        <input type="text" id="searchEmployeeID"><br>
+
+        <label for="searchDesignation">Designation:</label>
+        <input type="text" id="searchDesignation"><br>
+
+        <button type="button" onclick="searchEmployee()">Search Employee</button>
+    </form>
+
+    <div id="searchResults"></div>
+
+    <script>
+        function searchEmployee() {
+            var searchEmployeeID = document.getElementById("searchEmployeeID").value;
+            var searchDesignation = document.getElementById("searchDesignation").value;
+
+            // Make an AJAX request to the servlet
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    // Handle the JSON response and update the UI
+                    displaySearchResults(JSON.parse(xhr.responseText));
+                }
+            };
+            
+            // Construct the URL with parameters
+            var url = "searchServlet?";
+            if (searchEmployeeID) {
+                url += "searchEmployeeID=" + searchEmployeeID + "&";
+            }
+            if (searchDesignation) {
+                url += "searchDesignation=" + searchDesignation;
+            }
+            
+            // Remove trailing "&" if present
+            url = url.replace(/&$/, "");
+
+            xhr.open("GET", url, true);
+            xhr.send();
+        }
+
+        function displaySearchResults(results) {
+            var searchResultsDiv = document.getElementById("searchResults");
+            searchResultsDiv.innerHTML = "<h3>Search Results</h3>";
+
+            // Check if there are search results
+            if (results.length > 0) {
+                // Display each result
+                for (var i = 0; i < results.length; i++) {
+                    var employee = results[i];
+                    var resultHtml = "Employee ID: " + employee.employeeID + "<br>" +
+                                     "First Name: " + employee.firstName + "<br>" +
+                                     "Last Name: " + employee.lastName + "<br>" +
+                                     "Designation: " + employee.designation + "<br>";
+                              if (employee.knownLanguages && employee.knownLanguages.length > 0) {
+                    resultHtml += "Known Languages:<br>";
+                    for (var j = 0; j < employee.knownLanguages.length; j++) {
+                        var language = employee.knownLanguages[j];
+                        resultHtml += "- " + language.languageName + ": " + language.scoreOutof100 + "<br>" ;
+                    }
+                      resultHtml +="<br>"+"<br>";
+                } else {
+                    resultHtml += "No known languages.<br>";
+                }
+                    searchResultsDiv.innerHTML += resultHtml;
+                }
+            } else {
+                searchResultsDiv.innerHTML += "<p>No results found.</p>";
+            }
+        }
+    </script>
+</body>
+</html>

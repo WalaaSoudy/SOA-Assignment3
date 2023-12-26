@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Employee</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #007bff;
+            text-align: center;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            width: 300px; /* Adjust the width as needed */
+            margin: auto; /* Center the form */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Add Employee</h2>
+    <form action="employeeServlet" method="post">
+        <input type="hidden" name="action" value="add">
+
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstName" required><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastName" required><br>
+
+        <label for="employeeID">Employee ID:</label>
+        <input type="text" name="employeeID" required><br>
+
+        <label for="designation">Designation:</label>
+        <input type="text" name="designation" required><br>
+
+        <!-- Example: Add field for known languages -->
+        <label for="language1Name">Language 1 Name:</label>
+<input type="text" name="language1Name" />
+
+<label for="language1Score">Language 1 Score:</label>
+<input type="text" name="language1Score" />
+
+<label for="language2Name">Language 2 Name:</label>
+<input type="text" name="language2Name" />
+
+<label for="language2Score">Language 2 Score:</label>
+<input type="text" name="language2Score" />
+
+<label for="language3Name">Language 3 Name:</label>
+<input type="text" name="language3Name" />
+
+<label for="language3Score">Language 3 Score:</label>
+<input type="text" name="language3Score" />
+
+
+
+<!-- Repeat the above for language 2 and 3 -->
+
+        <!-- Add more fields for known languages if needed -->
+
+        <input type="submit" value="Add Employee">
+    </form>
+</body>
+
+</html>

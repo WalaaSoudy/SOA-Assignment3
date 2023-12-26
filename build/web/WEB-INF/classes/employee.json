@@ -1,0 +1,61 @@
+[ {
+  "firstName" : "alaa",
+  "lastName" : "soudy",
+  "employeeID" : 12,
+  "designation" : "devloper",
+  "knownLanguages" : [ {
+    "languageName" : "c#",
+    "scoreOutof100" : 100
+  }, {
+    "languageName" : "java",
+    "scoreOutof100" : 110
+  }, {
+    "languageName" : "js",
+    "scoreOutof100" : 100
+  } ]
+}, {
+  "firstName" : "rana",
+  "lastName" : "soudy",
+  "employeeID" : 2000,
+  "designation" : "Team Leader",
+  "knownLanguages" : [ {
+    "languageName" : "c#",
+    "scoreOutof100" : 100
+  }, {
+    "languageName" : "java",
+    "scoreOutof100" : 60
+  }, {
+    "languageName" : "js",
+    "scoreOutof100" : 100
+  } ]
+}, {
+  "firstName" : "rana",
+  "lastName" : "soudy",
+  "employeeID" : 200,
+  "designation" : "devloper",
+  "knownLanguages" : [ {
+    "languageName" : "c#",
+    "scoreOutof100" : 100
+  }, {
+    "languageName" : "java",
+    "scoreOutof100" : 60
+  }, {
+    "languageName" : "js",
+    "scoreOutof100" : 100
+  } ]
+}, {
+  "firstName" : "rana",
+  "lastName" : "soudy",
+  "employeeID" : 100,
+  "designation" : "devloper",
+  "knownLanguages" : [ {
+    "languageName" : "c#",
+    "scoreOutof100" : 100
+  }, {
+    "languageName" : "java",
+    "scoreOutof100" : 60
+  }, {
+    "languageName" : "js",
+    "scoreOutof100" : 100
+  } ]
+} ]
